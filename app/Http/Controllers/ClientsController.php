@@ -29,7 +29,7 @@ class ClientsController extends Controller
         return view('clients.show', compact('client'));    
     }
 
-    public function create() 
+    public function create()  
     {
         return view('clients.create');
     }
@@ -37,7 +37,11 @@ class ClientsController extends Controller
     public function store()
     {
         $data = request()->validate([
-            'name' => 'required'
+            'first_name' => 'required',
+            'last_name' => 'required',
+            'email' => 'required',
+            'phone' => 'required',
+            'company' => 'required',
         ]);
 
         auth()->user()->clients()->create($data);

@@ -21,6 +21,9 @@
                     <div>
                         <a href="/clients" class="btn btn-info">See your clients</a>
                     </div>
+                    <div>
+                        <a href="/projects" class="btn btn-info">See your projects</a>
+                    </div>
                 </div>
             </div>
         </div>
